@@ -7,7 +7,7 @@ from helloworld.greet.greeting import Greeter
 
 
 def say_hello() -> None:
-    greeting = Greeter().greet("Pantsbuild")
+    greeting = Greeter().greet(5)
     print(green(greeting))
 
 

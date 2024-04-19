@@ -24,7 +24,7 @@ class Greeter:
         )
         self._translator = LanguageTranslator(self._translations)
 
-    def greet(self, name: str) -> str:
+    def greet(self, name: int) -> str:
         random_greeting = random.choice(list(self._translations.keys()))
         greeting = self._translator.translate_to_random_language(random_greeting)
         return f"{greeting}, {name}!".capitalize()
